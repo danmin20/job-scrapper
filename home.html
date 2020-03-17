@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go Jobs</title>
+    <title>Job Scrapper</title>
 </head>
-<body>
-    <h1>Go Jobs</h1>
+
+<header>
+    <h1>Job Scrapper</h1>
     <h3>Indeed.com scrapper</h3>
+</header>
+
+<body>
     <form method="POST" action="/scrape">
-        <input placeholder="what job do you want?" name="term"/>
-        <button>Search</button>
+        <input placeholder="what job do you want?" name="term" />
     </form>
 </body>
+
 </html>
+
+<style>
+    header {
+        background-color: #00ADD8;
+        height: 100%;
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    h3 {
+        font-family: 'Bitter', serif;
+        margin-bottom: 50px;
+        font-size: 10px;
+    }
+
+    form {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+    input {
+        font-family: 'Bitter', serif;
+        font-size: 20px;
+        font-weight: 100;
+        border: 0px;
+        padding: 10px 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    :focus {
+        outline: none;
+    }
+</style>
